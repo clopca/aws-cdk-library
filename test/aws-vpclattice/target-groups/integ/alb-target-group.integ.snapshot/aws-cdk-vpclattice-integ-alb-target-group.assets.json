@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "c07403f4fa3caa251be9e9079632c73c59f17aff5b83d1632f554c8b1df9a01e": {
+      "source": {
+        "path": "aws-cdk-vpclattice-integ-alb-target-group.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "c07403f4fa3caa251be9e9079632c73c59f17aff5b83d1632f554c8b1df9a01e.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

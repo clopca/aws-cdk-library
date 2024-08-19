@@ -15,6 +15,62 @@
     "eject": "npx projen eject",
     "eslint": "npx projen eslint",
     "integ": "npx projen integ",
+    "integ:alb-target-group:assert": "npx projen integ:alb-target-group:assert",
+    "integ:alb-target-group:deploy": "npx projen integ:alb-target-group:deploy",
+    "integ:alb-target-group:destroy": "npx projen integ:alb-target-group:destroy",
+    "integ:alb-target-group:snapshot": "npx projen integ:alb-target-group:snapshot",
+    "integ:alb-target-group:watch": "npx projen integ:alb-target-group:watch",
+    "integ:asg-target-group:assert": "npx projen integ:asg-target-group:assert",
+    "integ:asg-target-group:deploy": "npx projen integ:asg-target-group:deploy",
+    "integ:asg-target-group:destroy": "npx projen integ:asg-target-group:destroy",
+    "integ:asg-target-group:snapshot": "npx projen integ:asg-target-group:snapshot",
+    "integ:asg-target-group:watch": "npx projen integ:asg-target-group:watch",
+    "integ:basic:assert": "npx projen integ:basic:assert",
+    "integ:basic:deploy": "npx projen integ:basic:deploy",
+    "integ:basic:destroy": "npx projen integ:basic:destroy",
+    "integ:basic:snapshot": "npx projen integ:basic:snapshot",
+    "integ:basic:watch": "npx projen integ:basic:watch",
+    "integ:instance-target-group:assert": "npx projen integ:instance-target-group:assert",
+    "integ:instance-target-group:deploy": "npx projen integ:instance-target-group:deploy",
+    "integ:instance-target-group:destroy": "npx projen integ:instance-target-group:destroy",
+    "integ:instance-target-group:snapshot": "npx projen integ:instance-target-group:snapshot",
+    "integ:instance-target-group:watch": "npx projen integ:instance-target-group:watch",
+    "integ:ip-target-group:assert": "npx projen integ:ip-target-group:assert",
+    "integ:ip-target-group:deploy": "npx projen integ:ip-target-group:deploy",
+    "integ:ip-target-group:destroy": "npx projen integ:ip-target-group:destroy",
+    "integ:ip-target-group:snapshot": "npx projen integ:ip-target-group:snapshot",
+    "integ:ip-target-group:watch": "npx projen integ:ip-target-group:watch",
+    "integ:lambda-target-group:assert": "npx projen integ:lambda-target-group:assert",
+    "integ:lambda-target-group:deploy": "npx projen integ:lambda-target-group:deploy",
+    "integ:lambda-target-group:destroy": "npx projen integ:lambda-target-group:destroy",
+    "integ:lambda-target-group:snapshot": "npx projen integ:lambda-target-group:snapshot",
+    "integ:lambda-target-group:watch": "npx projen integ:lambda-target-group:watch",
+    "integ:listener:assert": "npx projen integ:listener:assert",
+    "integ:listener:deploy": "npx projen integ:listener:deploy",
+    "integ:listener:destroy": "npx projen integ:listener:destroy",
+    "integ:listener:snapshot": "npx projen integ:listener:snapshot",
+    "integ:listener:watch": "npx projen integ:listener:watch",
+    "integ:service-network:assert": "npx projen integ:service-network:assert",
+    "integ:service-network:deploy": "npx projen integ:service-network:deploy",
+    "integ:service-network:destroy": "npx projen integ:service-network:destroy",
+    "integ:service-network:snapshot": "npx projen integ:service-network:snapshot",
+    "integ:service-network:watch": "npx projen integ:service-network:watch",
+    "integ:service:assert": "npx projen integ:service:assert",
+    "integ:service:deploy": "npx projen integ:service:deploy",
+    "integ:service:destroy": "npx projen integ:service:destroy",
+    "integ:service:snapshot": "npx projen integ:service:snapshot",
+    "integ:service:watch": "npx projen integ:service:watch",
+    "integ:single-acct-custom-private-domain:assert": "npx projen integ:single-acct-custom-private-domain:assert",
+    "integ:single-acct-custom-private-domain:deploy": "npx projen integ:single-acct-custom-private-domain:deploy",
+    "integ:single-acct-custom-private-domain:destroy": "npx projen integ:single-acct-custom-private-domain:destroy",
+    "integ:single-acct-custom-private-domain:snapshot": "npx projen integ:single-acct-custom-private-domain:snapshot",
+    "integ:single-acct-custom-private-domain:watch": "npx projen integ:single-acct-custom-private-domain:watch",
+    "integ:single-acct-flow:assert": "npx projen integ:single-acct-flow:assert",
+    "integ:single-acct-flow:deploy": "npx projen integ:single-acct-flow:deploy",
+    "integ:single-acct-flow:destroy": "npx projen integ:single-acct-flow:destroy",
+    "integ:single-acct-flow:snapshot": "npx projen integ:single-acct-flow:snapshot",
+    "integ:single-acct-flow:watch": "npx projen integ:single-acct-flow:watch",
+    "integ:snapshot-all": "npx projen integ:snapshot-all",
     "integ:update": "npx projen integ:update",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
@@ -37,13 +93,14 @@
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/integ-runner": "2.120.0-alpha.0",
-    "@aws-cdk/integ-tests-alpha": "2.120.0-alpha.0",
+    "@aws-cdk/integ-runner": "2.145.0-alpha.0",
+    "@aws-cdk/integ-tests-alpha": "2.145.0-alpha.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
-    "aws-cdk-lib": "2.120.0",
+    "aws-cdk": "^2",
+    "aws-cdk-lib": "2.145.0",
     "constructs": "10.3.0",
     "eslint": "^8",
     "eslint-config-prettier": "^9.1.0",
@@ -65,7 +122,7 @@
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.120.0",
+    "aws-cdk-lib": "^2.145.0",
     "constructs": "^10.3.0"
   },
   "keywords": [
@@ -79,11 +136,19 @@
   "publishConfig": {
     "access": "public"
   },
+  "typesVersions": {
+    "<=3.9": {
+      "lib/*": [
+        "lib/.types-compat/ts3.9/*",
+        "lib/.types-compat/ts3.9/*/index.d.ts"
+      ]
+    }
+  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.ts?(x)",
-      "<rootDir>/(test|src)/**/*(*.)@(spec|test).ts?(x)"
+      "<rootDir>/@(test|src)/**/*(*.)@(spec|test).ts?(x)"
     ],
     "clearMocks": true,
     "collectCoverage": true,
